@@ -1,0 +1,89 @@
+@font-face {
+    font-family: myFont;
+    src: url("CursedTimerUlil-Aznm.ttf");
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    color:#EEEEEE;
+}
+
+.bg-black{
+    background-color: #080001;
+    width: 155px;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: -70px;
+}
+
+p{
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #9AABD8;
+    cursor: pointer;
+}
+
+
+.bg-black.scored{
+    transition: all 2s;
+    animation: scaleUp 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s 1 both;
+}
+
+@keyframes scaleUp {
+    0%,100%{
+        transform: scale(1);
+    }
+    
+    25%{
+        transform: scale(1.1);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    75%{
+        transform: scale(1.15);
+    }
+
+    
+}
