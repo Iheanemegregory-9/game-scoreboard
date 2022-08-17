@@ -1,38 +1,43 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-
-                    <div class="bg-black">
-                        <p id="home-score">15</p>
-                    </div>
-
-                    <div class="btns">
-                        <button onclick="add1()"> +1</button>
-                        <button onclick="add2()">+2</button>
-                        <button onclick="add3()">+3</button>
-                    </div>
-
-            </div>
-            <div>
-                <h3>GUEST</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Greg- Score Board Updater</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
 
                 <div class="bg-black">
-                    <p id="guest-score">5</p>
+                    <p id="home-score">15</p>
                 </div>
 
                 <div class="btns">
-                    <button onclick="gscore1()">+1</button>
-                    <button onclick="gscore2()">+2</button>
-                    <button onclick="gscore3()">+3</button>
+                    <button onclick="add1()"> +1</button>
+                    <button onclick="add2()">+2</button>
+                    <button onclick="add3()">+3</button>
                 </div>
-            </div>
-            
+
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div>
+            <h3>GUEST</h3>
+
+            <div class="bg-black">
+                <p id="guest-score">5</p>
+            </div>
+
+            <div class="btns">
+                <button onclick="gscore1()">+1</button>
+                <button onclick="gscore2()">+2</button>
+                <button onclick="gscore3()">+3</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
